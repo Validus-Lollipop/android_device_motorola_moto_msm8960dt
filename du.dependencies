@@ -13,8 +13,14 @@
   },
   {
     "remote": "github",
-    "repository": "du-moto-x/android_kernel_motorola_msm8960dt-common",
+    "repository": "CyanogenMod/android_kernel_motorola_msm8960dt-common",
     "target_path": "kernel/motorola/msm8960dt-common",
-    "revision": "du"
+    "revision": "cm-11.0"
+  },
+  {
+    "remote": "github",
+    "repository": "TheMuppets/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "revision": "cm-11.0"
   }
 ]
