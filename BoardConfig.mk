@@ -73,9 +73,6 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 # Audio
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 
-# Charger
-BOARD_CHARGER_RES := device/motorola/moto_msm8960dt/charger
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
