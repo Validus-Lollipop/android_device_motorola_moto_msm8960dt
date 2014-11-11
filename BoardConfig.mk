@@ -38,8 +38,7 @@ LOCAL_PATH := device/motorola/moto_msm8960dt
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/motorola/moto_msm8960dt/init/init_moto_msm8960dt.c
+TARGET_INIT_VENDOR_LIB := libinit_moto_msm8960dt
 
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
