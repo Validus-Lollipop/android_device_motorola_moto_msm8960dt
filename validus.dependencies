@@ -1,26 +1,26 @@
 [
   {
-    "remote": "du",
+    "remote": "v5",
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "revision": "du44"
+    "revision": "5.0"
   },
   {
-    "remote": "du",
+    "remote": "v5",
     "repository": "android_device_motorola_qcom-common",
     "target_path": "device/motorola/qcom-common",
-    "revision": "du44"
+    "revision": "5.0"
   },
   {
-    "remote": "du",
+    "remote": "v5",
     "repository": "android_kernel_motorola_msm8960dt-common",
     "target_path": "kernel/motorola/msm8960dt-common",
-    "revision": "du44"
+    "revision": "5.0"
   },
   {
-    "remote": "du",
+    "remote": "v5",
     "repository": "proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
-    "revision": "du44"
+    "revision": "5.0"
   }
 ]
