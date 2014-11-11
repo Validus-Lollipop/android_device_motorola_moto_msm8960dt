@@ -1,12 +1,6 @@
 [
   {
     "remote": "v5",
-    "repository": "android_device_qcom_common",
-    "target_path": "device/qcom/common",
-    "revision": "5.0"
-  },
-  {
-    "remote": "v5",
     "repository": "android_device_motorola_qcom-common",
     "target_path": "device/motorola/qcom-common",
     "revision": "5.0"
