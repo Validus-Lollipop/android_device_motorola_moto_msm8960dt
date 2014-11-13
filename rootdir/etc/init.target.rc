@@ -448,6 +448,17 @@ service thermald /system/bin/thermald
    user root
    group root
    disabled
+   
+service gpsone_daemon /system/bin/gpsone_daemon
+    class late_start
+    user gps
+    group gps inet net_raw qcom_diag
+
+#start GNSS/Sensor interface daemon
+service gsiff_daemon /system/bin/gsiff_daemon
+    class late_start
+    user system
+    group gps qcom_oncrpc net_raw
 
 on property:qcom.thermal=thermald
     start thermald
