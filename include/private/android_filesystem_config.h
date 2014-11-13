@@ -78,11 +78,14 @@
 #define AID_SDCARD_ALL    1035  /* access all users external storage */
 #define AID_LOGD          1036  /* log daemon */
 #define AID_SHARED_RELRO  1037  /* creator of shared GNU RELRO files */
-#define AID_AUDIT         1038  /* audit daemon */
-#define AID_FM_RADIO      1039  /* FM radio */
+#define AID_LOGD          1036  /* log daemon */
+#define AID_SHARED_RELRO  1037  /* creator of shared GNU RELRO files */
+#define AID_FM_RADIO      1038  /* FM radio */
 #define AID_SMARTCARD     1138  /* smart card subsystem */
 
 #define AID_THEMEMAN      1300  /* theme manager */
+
+#define AID_AUDIT         1049  /* audit daemon */
 
 #define AID_SHELL         2000  /* adb and debug shell user */
 #define AID_CACHE         2001  /* cache access */
@@ -180,7 +183,8 @@ static const struct android_id_info android_ids[] = {
     { "sdcard_all",    AID_SDCARD_ALL, },
     { "logd",          AID_LOGD, },
     { "shared_relro",  AID_SHARED_RELRO, },
-
+	
+	{ "audit",         AID_AUDIT, },
     { "shell",         AID_SHELL, },
     { "cache",         AID_CACHE, },
     { "diag",          AID_DIAG, },
@@ -214,12 +218,10 @@ static const struct android_id_info android_ids[] = {
     { "mot_atvc",	AID_MOT_ATVC, },
     { "sprint_extension", AID_SPRINT_EXTENSION, },
     { "mot_dbvc",	AID_MOT_DBVC, },
-
+	
     { "everybody",     AID_EVERYBODY, },
     { "misc",          AID_MISC, },
     { "nobody",        AID_NOBODY, },
-    { "theme_man", AID_THEMEMAN },
-    { "audit",      AID_AUDIT, },
 };
 
 #define android_id_count \
@@ -254,7 +256,6 @@ static const struct fs_path_config android_dirs[] = {
     { 00775, AID_MEDIA_RW, AID_MEDIA_RW, 0, "data/media/Music" },
     { 00771, AID_SYSTEM, AID_SYSTEM, 0, "data" },
     { 00750, AID_ROOT,   AID_SHELL,  0, "sbin" },
-    { 00755, AID_ROOT,   AID_ROOT,   0, "system/addon.d" },
     { 00755, AID_ROOT,   AID_SHELL,  0, "system/bin" },
     { 00755, AID_ROOT,   AID_SHELL,  0, "system/vendor" },
     { 00755, AID_ROOT,   AID_SHELL,  0, "system/xbin" },
@@ -281,7 +282,6 @@ static const struct fs_path_config android_files[] = {
     { 00444, AID_RADIO,     AID_AUDIO,     0, "system/etc/AudioPara4.csv" },
     { 00555, AID_ROOT,      AID_ROOT,      0, "system/etc/ppp/*" },
     { 00555, AID_ROOT,      AID_ROOT,      0, "system/etc/rc.*" },
-    { 00755, AID_ROOT,      AID_ROOT,      0, "system/addon.d/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app/*" },
     { 00644, AID_MEDIA_RW,  AID_MEDIA_RW,  0, "data/media/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app-private/*" },

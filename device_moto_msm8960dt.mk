@@ -185,6 +185,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.dfr_mode_set=1 \
     persist.rmnet.mux=disabled \
     persist.radio.eons.enabled=1
+	
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
 
 $(call inherit-product, device/motorola/qcom-common/qcom-common.mk)
 $(call inherit-product, device/motorola/moto_msm8960dt/idc/idc.mk)
