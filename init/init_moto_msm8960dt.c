@@ -72,7 +72,6 @@ void vendor_load_properties()
         property_set("ro.product.model", "DROID MAXX");
         property_set("ro.build.description", "obake_verizon-user 4.4 SU2-3 15 release-keys");
         property_set("ro.build.fingerprint", "motorola/obake_verizon/obake:4.4/SU2-3/15:user/release-keys");
-        property_set(PROP_QEMU_NAVKEY, "1");
     } else if (ISMATCH(radio, "0x4")) {
         /* xt1056 */
         property_set("ro.product.device", "ghost_sprint");
